@@ -1,14 +1,14 @@
 {
   "name": "desafio-capitulo-7",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "parcel": "^2.4.1"
   },
   "scripts": {
     "dev": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html --dist-dir build --public-url /task-list-web-app",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "gh-pages": "^3.2.3"
