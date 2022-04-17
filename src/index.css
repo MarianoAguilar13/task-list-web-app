@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 30px;
+  padding: 0;
+  background-color: black;
+}
+
+.container-page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container-page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.titulo-pincipal {
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  align-items: center;
+  text-align: center;
+  margin: 40px auto;
+}
+
+@media (min-width: 769px) {
+  .titulo-pincipal {
+    font-size: 52px;
+  }
+}
+
+.form {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  min-width: 300px;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .form {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  align-self: center;
+}
+
+@media (min-width: 769px) {
+  .label {
+    text-align: center;
+    flex-direction: row;
+    min-height: 50px;
+    width: 600px;
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+.input {
+  font-family: "Poppins", sans-serif;
+  min-height: 50px;
+  width: 100%;
+  font-size: 18px;
+  border: outset #5ae3fc 5px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+@media (min-width: 769px) {
+  .input {
+    width: 350px;
+    margin-left: 20px;
+  }
+}
+
+.boton-form {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  width: 100%;
+  height: 50px;
+  align-self: flex-end;
+  border-radius: 5px;
+  background-color: #5ae3fc;
+  color: black;
+  align-self: center;
+  margin-top: 15px;
+}
+
+@media (min-width: 769px) {
+  .boton-form {
+    width: 200px;
+    align-self: center;
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
+
+.container-lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media (min-width: 769px) {
+  .container-lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
