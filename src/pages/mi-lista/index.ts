@@ -55,6 +55,7 @@ export function initMiLista() {
   //cuando hago un submit en el form de la nueva tarea, voy a modificar el state
   //haciendo un addItem de una nueva tarea, con completada y borrrada iniciada con false
   //y el texto va a ser lo que ingrese en el imput
+  const inputFormEl = div.querySelector(".input") as any;
   const form = div.querySelector(".form");
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -65,6 +66,9 @@ export function initMiLista() {
       completada: false,
       borrada: false,
     };
+
+    //reseteo el contenido del input para que el usuario no tenga que borrarlo
+    inputFormEl.value = "";
 
     state.addItem(tarea);
   });
